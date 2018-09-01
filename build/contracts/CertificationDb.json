@@ -1,0 +1,128 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_deviceId",
+                "type": "uint8"
+            },
+            {
+                "name": "_timestamp",
+                "type": "uint256"
+            },
+            {
+                "name": "_temperature",
+                "type": "uint256"
+            }
+        ],
+        "name": "addReading",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_deviceId",
+                "type": "uint8"
+            },
+            {
+                "name": "_readingNumber",
+                "type": "uint8"
+            }
+        ],
+        "name": "getLastNReadingsByDeviceId",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address[]"
+            },
+            {
+                "name": "",
+                "type": "uint256[]"
+            },
+            {
+                "name": "",
+                "type": "uint256[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_deviceId",
+                "type": "uint8"
+            }
+        ],
+        "name": "getDeviceById",
+        "outputs": [
+            {
+                "name": "description",
+                "type": "bytes32"
+            },
+            {
+                "name": "state",
+                "type": "uint8"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "getAllDevices",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint8[]"
+            },
+            {
+                "name": "",
+                "type": "bytes32[]"
+            },
+            {
+                "name": "",
+                "type": "uint8[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_deviceId",
+                "type": "uint8"
+            },
+            {
+                "name": "_description",
+                "type": "bytes32"
+            },
+            {
+                "name": "_state",
+                "type": "uint8"
+            }
+        ],
+        "name": "addDevice",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    }
+]

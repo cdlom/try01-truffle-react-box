@@ -1,0 +1,20 @@
+
+truffle console --network ganache
+
+
+DemoSupplyChain.deployed().then(function(i) { app = i })
+app.address
+app.getAllDevices()
+
+app.getAllDevices().then(function(dev) { devices= dev })
+
+devices
+
+devices[1]
+
+devices[0].toString()
+
+
+app.getDeviceById(1)
+
+app.getDeviceById(1).then(function(d) {dev1=d})
